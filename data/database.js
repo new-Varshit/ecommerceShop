@@ -3,7 +3,7 @@ const MongoClient = mongodb.MongoClient;
 let MongodbUrl = 'mongodb://127.0.0.1:27017';
 
 if(process.env.MONGODB_URL){
-    mongodbUrl = process.env.MONGODB_URL;
+    MongodbUrl = process.env.MONGODB_URL;
 }
 
 async function connectToDatabase() {
