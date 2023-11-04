@@ -1,4 +1,4 @@
-const stripe = require('stripe')();
+const stripe = require('stripe')(process.env.STRIPE_API_KEY);
 
 
 const Order = require('../models/order.model');
